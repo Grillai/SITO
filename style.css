@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
-  
-    
-    font-family: 'Open Sans', sans-serif;
-}
+
 
 html{
     scroll-behavior: smooth;
@@ -210,28 +204,29 @@ nav{
     height: 320px;
     padding: 0px 0px;
     position: relative;
+    padding: -1rem;
+   
     
 }
    
 .Sezione_Servizi .div2{
     width: 65%;
     height: 320px;
-    padding: 0px 0px;
     position: relative;
+    padding: -1rem;
 }
 
 .Sezione_Servizi .div3{
     width: 65%;
     height: 320px;
-    padding: 0px 0px;
     position: relative;
+    padding: -1rem;
 }
 .Sezione_Servizi .div4{
     width: 65%;
     height: 320px;
-    
-    padding: 0px 0px;
     position: relative;
+    padding: -1rem;
 }
 .Sezione_Servizi img{
     width: 100%;
@@ -239,9 +234,10 @@ nav{
     object-fit: cover;
     display: block;
     -webkit-box-shadow: 0px 0px 23px -2px #ffcc00e0; 
-box-shadow: 0px 0px 23px -2px #ffcc00e0;
-    border-radius: 20px;
-    transition: 0.5s;
+    box-shadow: 0px 0px 23px -2px #ffcc00e0;
+    border-radius: 10px;
+    transition: 0.5s;   
+   
 }
 
 .Sezione_Servizi img:hover{
@@ -251,29 +247,27 @@ box-shadow: 0px 0px 23px -2px #ffcc00e0;
     opacity: 60%;
 }
 
-.div1 figcaption {
+.div1 figcaption a{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-
-    width: 40%;
+    text-decoration: none;
+    max-width: 100%;
     height: 20%;
-    text-align: center;
-    padding-top: 20px;
-    
-    opacity: 0;
-    
-    transition: 1s;
-    font-size: 16px;
+    padding-top: 20px;   
+    opacity: 0; 
+    transition: 0.5s;
+    font-size: 20px;
     font-weight: 900;
+  
     
     
 }
 
 
-.div1:hover figcaption {
+.div1:hover figcaption a{
     opacity: 1;
     color: #ffcc00e0;
     text-shadow: 2px 2px 2px #000000;
@@ -281,28 +275,27 @@ box-shadow: 0px 0px 23px -2px #ffcc00e0;
 }
 
 
-.div2 figcaption {
+.div2 figcaption a{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-
-    width: 40%;
+    text-decoration: none;
+    max-width: 100%;
     height: 20%;
-    text-align: center;
-    padding-top: 20px;
-    
-    opacity: 0;
-    
-    
-    transition: 1s;
-    
+    padding-top: 20px;   
+    opacity: 0; 
+    transition: 0.5s;
+    font-size: 20px;
     font-weight: 900;
-    font-size: 16px;
+  
+    
+    
 }
 
-.div2:hover figcaption {
+
+.div2:hover figcaption a{
     opacity: 1;
     color: #ffcc00e0;
     text-shadow: 2px 2px 2px #000000;
@@ -310,58 +303,54 @@ box-shadow: 0px 0px 23px -2px #ffcc00e0;
 }
 
 
-.div3 figcaption {
+.div3 figcaption a{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-
-    width: 40%;
+    text-decoration: none;
+    max-width: 100%;
     height: 20%;
-    text-align: center;
-    padding-top: 20px;
-    
-    opacity: 0;
-    
-    transition: 1s;
-    
+    padding-top: 20px;   
+    opacity: 0; 
+    transition: 0.5s;
+    font-size: 20px;
     font-weight: 900;
-    font-size: 16px;
-   
+  
+    
+    
 }
 
 
-.div3:hover figcaption {
+.div3:hover figcaption a{
     opacity: 1;
     color: #ffcc00e0;
     text-shadow: 2px 2px 2px #000000;
     
 }
 
-.div4 figcaption {
+.div4 figcaption a{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-
-    width: 40%;
+    text-decoration: none;
+    max-width: 100%;
     height: 20%;
-    text-align: center;
-    padding-top: 20px;
-    
-    opacity: 0;
-    
-    transition: 1s;
-    
+    padding-top: 20px;   
+    opacity: 0; 
+    transition: 0.5s;
+    font-size: 20px;
     font-weight: 900;
-    font-size: 16px;
-   
+  
+    
+    
 }
 
 
-.div4:hover figcaption {
+.div4:hover figcaption a{
     opacity: 1;
     color: #ffcc00e0;
     text-shadow: 2px 2px 2px #000000;
@@ -466,7 +455,7 @@ box-shadow: 0px 0px 23px -2px #ffcc00e0;
     top: 19.4%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ffcc00e0;
+    background-color: #f7cb15;
     font-size: 44px;
     font-weight:600;
     font-family: 'Montserrat', sans-serif;
@@ -852,7 +841,7 @@ button:active{
     align-items: center;
     padding:2rem;
 	background-color: #ffcc00;
-    margin-top: 350px;
+    margin-top: 200px;
     width: 100%;
     
 }
@@ -1056,14 +1045,12 @@ ul{
         width: 70%;
         height: 280px;
         
-        
     }
 
-    .div1 figcaption {
+    .div1 figcaption a{
         position: absolute;
         top: 50%;
-        left: 35%;
-        
+        left: 50%;
        
     }
 
@@ -1072,20 +1059,17 @@ ul{
     .Sezione_Servizi .div2{
         width: 70%;
         height: 280px;
-        font-size: 16px;
        
     }
     
     .Sezione_Servizi .div3{
         width: 70%;
         height: 280px;
-        font-size: 16px;
        
     }
     .Sezione_Servizi .div4{
         width: 70%;
         height: 280px;
-        font-size: 16px;
         
     }
 
@@ -1094,7 +1078,37 @@ ul{
 
 @media screen and (max-width:768px) {
     
-    
+    .Sezione_Servizi img{
+       opacity: 60%;
+    }
+    .Sezione_Servizi img:hover{
+        transform:none;  
+    }
+
+    .div1 figcaption a{
+        opacity: 1;  
+        color: #ffcc00;     
+        
+    }
+    .div2 figcaption a{
+        opacity: 1;  
+        color: #ffcc00;     
+        
+    }
+    .div3 figcaption a{
+        opacity: 1;  
+        color: #ffcc00;     
+        
+    }
+    .div4 figcaption a{
+        opacity: 1;  
+        color: #ffcc00;     
+        
+    }
+
+
+  
+
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
@@ -1139,19 +1153,44 @@ ul{
         
     }
 
+    .Card1{
+        overflow: auto !important;
+        height: 250px;
+    }
+
+    .Card2{
+        overflow: auto !important;
+        height: 250px;
+    }
+    .Card3{
+        overflow: auto !important;
+        height: 250px;
+    }
+    .Card4{
+        overflow: auto !important;
+        height: 250px;
+    }
+
    
 
    
 }
 
 @media screen and (max-width:656px) {
-    
+   
+
+
+    .footer{
+        margin-top: 100px;
+    }
+
     .footer-col{
         width: 100%;
     }
 
     .Pacchetto_3{
-        width: 359px;
+        width: 350px;
+        margin: 10px 20px;
     }
     .hamburger{
         display: block;
@@ -1217,30 +1256,88 @@ ul{
         font-size: 33px;
         letter-spacing: 0px;
     }
-    .Sezione_Servizi .div1{
-        width: 404%;
-        height: 280px;
-        font-size: 16px;
-       
+
+    .Sezione_Servizi{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
     }
-    .Sezione_Servizi .div2{
-        width: 404%;
-        height: 280px;
-        font-size: 16px;
-       
+
+
+    .Sezione_Servizi img{  
+        opacity: 60%;
+        
+    }
+    .Sezione_Servizi img:hover{
+        transform:none;  
     }
     
-    .Sezione_Servizi .div3{
-        width: 404%;
+    .div1{
+        max-width: 90%;
         height: 280px;
         font-size: 16px;
+        padding-left: 0;
+        margin: 0;
        
     }
-    .Sezione_Servizi .div4{
-        width: 404%;
+   
+    .div1 figcaption a{
+        opacity: 1;  
+        color: #ffcc00;   
+        
+        
+    }
+
+    
+   
+    .div2{
+        max-width: 90%;
         height: 280px;
         font-size: 16px;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .div2 figcaption a{
+        opacity: 1;  
+        color: #ffcc00;     
+      
+    }
+
+    
+    .div3{
+        max-width: 90%;
+        height: 280px;
+        font-size: 16px;
+        padding-left: 0;
+        margin: 0;
         
+    }
+    .div3 figcaption a{
+        opacity: 1;  
+        color: #ffcc00;     
+       
+    }
+
+    .div4{
+        max-width: 90%;
+        height: 280px;
+        font-size: 16px;
+        padding-left: 0;
+        margin: 0;
+        
+    }
+    .div4 figcaption a{
+        opacity: 1;  
+        color: #ffcc00;   
+        
+    }
+    .Container_Titolo{
+        margin: 100px auto;
+        margin-bottom: 30px;
     }
 
     .Container_Titolo h2 {
@@ -1248,20 +1345,16 @@ ul{
         font-size: 26px;
         
     }
+
+    .Container_Abbonamenti_Titolo{
+        margin: 100px auto;
+        margin-bottom: 30px;
+    }
     .Container_Abbonamenti_Titolo h2{
-        
-        font-size: 26px;
+       font-size: 26px;
        
     }
 
-    .div1 figcaption {
-        position: absolute;
-        top: 50%;
-        left: 47%;
-        font-size: 20px;
-        
-       
-    }
 
 
     .Container_Abbonamenti{
@@ -1269,6 +1362,15 @@ ul{
         display: flex;
         padding-right: 0px;
         
+    }
+
+   .Container_Staff_Titolo{
+        margin: 100px auto;
+        margin-bottom: 30px;
+    
+    }
+    .Container_Staff_Titolo h2{
+        font-size: 26px;
     }
 
     .Card1{
@@ -1289,6 +1391,10 @@ ul{
         height: 250px;
     }
 
+    .Container_Contattaci_Titolo{
+        margin: 100px auto;
+        margin-bottom: 0px;
+    }
     .Container_Contattaci_Titolo h2{
         font-size: 26px;
     }
@@ -1335,8 +1441,7 @@ ul{
     }
 
     .Nome{
-        padding-top: 0px;
-        
+        padding-top: 0px;    
         height: 40px;
     }
 
@@ -1348,7 +1453,7 @@ ul{
 
     .E_Mail{
         padding-top: 0px;
-        margin: 80px auto;
+        margin-top: 80px;
         height: 40px;
     }
 
@@ -1357,9 +1462,11 @@ ul{
     }
 
     .Messaggio{
-        margin: 10px auto;
-        padding-top: 20px;
+        margin-top: 20px;
+        
     }
+    
+
     
 }
 
