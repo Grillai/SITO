@@ -184,12 +184,12 @@ nav{
 
 
 .Sezione_Servizi {
-    display: flex; 
+    display: inline-flex; 
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;  
     gap: 90px 60px;
-    padding: 0;
+    padding: 0;  
     max-height: 100%;
     max-width: 100%;
     
@@ -368,10 +368,6 @@ nav{
     
     width: 100%;
     text-align: center;
-    
-    
-    
-    
 }
 
 
