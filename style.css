@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 
-
 html{
     scroll-behavior: smooth;
     height: 100%;
@@ -826,90 +825,114 @@ button:active{
 }
 
 
-
 .footer{
+    max-width: 100%;
+    background-color: #ffcc00;
+    margin-top: 100px;
+    padding: 1rem;
+}
+
+.Contenitore_elementi_footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+    
+}
+
+.Logo_Footer{
+    max-width: 150px;
+    height: 200px;
+    text-align: center;
+   
+}
+.Logo_Footer h1{
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif; 
+}
+.Logo_Footer img{
+    width: 70%;
+    border-radius: 100px;
+}
+
+.Orari ul{
+    list-style: none;
+    padding: 0px;
+   
+    
+}
+.Orari h1{
+    font-size: 22px;
+    text-align: left;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: underline #e91e63;
+    
+}
+
+.Orari li{
+    padding: 6px;
+    
+   
+}
+.Orari li h4{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif; 
+
+}
+
+.Contatti ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.Contatti h1{
+    font-size: 22px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: underline #e91e63;
+}
+
+.Contatti li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.Social ul{
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+   
+    
+}
+.Social li {
+    width: 35px;
+    height: 33px;   
+    border-radius: 50px;
+    margin-right: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:2rem;
-	background-color: #ffcc00;
-    margin-top: 200px;
-    width: 100%;
+    background-color: #fce97e;
+}
+.Social i{
+    font-size: 19px;
     
+    color: rgb(0, 0, 0);
 }
 
-.container_footer{
-    
-    width: 100%;
-    margin: 0 0;
-    
-    
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: space-around;
-}
-ul{
-	list-style: none;
-    padding-left: 0rem;
-}
-
-
-.footer-col{
-   width: 33%;
-   padding: 0 65px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #000000;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #000000;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #000000;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+.Social h1{
+    font-size: 22px;
+    padding-bottom: 16px;
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: underline #e91e63;
 }
 
 
@@ -920,8 +943,23 @@ ul{
 
 
 @media screen  and (max-width: 991px){
-  
-    
+   
+
+
+    .Contenitore_elementi_footer{
+        
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 80px;
+    }
+
+    .Orari h1{
+        text-align: left;
+    }
+
+    .Contatti h1{
+        text-align: left;
+    }
 
    .nav-links{
        
@@ -943,38 +981,24 @@ ul{
     height: 450px;
     }
     
-   
-    .Sezione_Servizi {
-       display: grid;
-       grid-template-columns: repeat(5, 1fr);
-       grid-template-rows: repeat(4, 1fr);
-       grid-column-gap: 0px;
-       grid-row-gap: 50px;
-       }
-       
-       .div1 { grid-area: 1 / 3 / 2 / 4; }
-       .div2 { grid-area: 2 / 3 / 3 / 4; }
-       .div3 { grid-area: 3 / 3 / 4 / 4; }
-       .div4 { grid-area: 4 / 3 / 5 / 4; }
-
 
       
 
-       .div1 figcaption {
+       .div1 figcaption a{
            
-           font-size: 22px;
+           font-size: 32px;
            
           
        }
 
-       .div2 figcaption{
-           font-size: 22px;
+       .div2 figcaption a{
+           font-size: 32px;
        }
-       .div3 figcaption{
-           font-size: 22px;
+       .div3 figcaption a{
+           font-size: 32px;
        }
-       .div4 figcaption{
-           font-size: 22px;
+       .div4 figcaption a{
+           font-size: 32px;
        }
 
        .Sezione_Servizi .div1{
@@ -1012,132 +1036,12 @@ ul{
         transform: translate(-50%, -50%);
         
     }
+
 }
 
 
-@media screen  and (max-width: 1200px) and (min-width:992px) {
-    
-  
-
-    .nav-links{
-        
-        width: 70%;     
-       
-    }
-         
-}
-
-@media screen and (max-width:768px) {
-    
-    .Sezione_Servizi img{
-       opacity: 60%;
-    }
-    .Sezione_Servizi img:hover{
-        transform:none;  
-    }
-
-    .div1 figcaption a{
-        opacity: 1;  
-        color: #ffcc00;     
-        
-    }
-    .div2 figcaption a{
-        opacity: 1;  
-        color: #ffcc00;     
-        
-    }
-    .div3 figcaption a{
-        opacity: 1;  
-        color: #ffcc00;     
-        
-    }
-    .div4 figcaption a{
-        opacity: 1;  
-        color: #ffcc00;     
-        
-    }
-
-
-  
-
-    .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-    
-
-    .testo{
-        font-size: 58px;
-    }
-    .testo2{
-        font-size: 58px;
-    }
-    
-
-    .Container_Titolo h2 {
-        
-        font-size: 36px;
-        
-    }
-    .Container_Abbonamenti_Titolo h2{
-        
-        font-size: 36px;
-       
-    }
-
+@media screen and (max-width:770px) {
    
-
-    .Contattaci_sinistra{
-        margin-left: 20px;
-        width: 60%;
-    }
-
-    .Contattaci_destra{
-        margin-right: 20px;
-        
-    }
-    button{
-        position: absolute;
-        top: 92%;
-        left: 75%;
-        transform: translate(-50%, -50%);
-        
-    }
-
-    .Card1{
-        overflow: auto !important;
-        height: 250px;
-    }
-
-    .Card2{
-        overflow: auto !important;
-        height: 250px;
-    }
-    .Card3{
-        overflow: auto !important;
-        height: 250px;
-    }
-    .Card4{
-        overflow: auto !important;
-        height: 250px;
-    }
-
-   
-
-   
-}
-
-@media screen and (max-width:656px) {
-   
-
-
-    .footer{
-        margin-top: 100px;
-    }
-
-    .footer-col{
-        width: 100%;
-    }
 
     .Pacchetto_3{
         width: 350px;
@@ -1200,11 +1104,11 @@ ul{
      
     
     .testo{
-        font-size: 33px;
+        font-size: 35px;
         letter-spacing: 0px;
     }
     .testo2{
-        font-size: 33px;
+        font-size: 40px;        
         letter-spacing: 0px;
     }
 
@@ -1238,7 +1142,6 @@ ul{
     .div1 figcaption a{
         opacity: 1;  
         color: #ffcc00;   
-        
         
     }
 
@@ -1316,14 +1219,16 @@ ul{
     }
 
     .Pacchetto_1{
-        width: 80%;
+        width: 90%;
+        margin-bottom: 40px;
     }
     .Pacchetto_centrale{
-        width: 80%;
+        width: 90%;
+        margin-bottom: 40px;
     }
 
     .Pacchetto_3{
-        width: 80%;
+        width: 90%;
     }
 
    .Container_Staff_Titolo{
@@ -1336,23 +1241,23 @@ ul{
     }
 
     .Card1{
-        width: 80%;
+        width: 90%;
         overflow: auto !important;
         height: 250px;
     }
 
     .Card2{
-        width: 80%;
+        width: 90%;
         overflow: auto !important;
         height: 250px;
     }
     .Card3{
-        width: 80%;
+        width: 90%;
         overflow: auto !important;
         height: 250px;
     }
     .Card4{
-        width: 80%;
+        width: 90%;
         overflow: auto !important;
         height: 250px;
     }
@@ -1431,8 +1336,17 @@ ul{
         margin-top: 20px;
         
     }
-    
 
+    .Contatti h1{
+        padding-top: 10px;
+    }
+    
+    .Social h1{
+        padding-top: 10px;
+    }
+    .Contenitore_elementi_footer{
+        padding-left: 10px;
+    }
     
 }
 

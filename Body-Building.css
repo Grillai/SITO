@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 
-
 body{
     margin: 0;
     padding: 0;
     background-color: #030303;
-    height: 500vh;
+   
+    
 }
 
 
@@ -20,7 +20,6 @@ nav{
     border-bottom: 4px solid #ffcc00e0;
     
 }
-
 
 
 
@@ -120,6 +119,7 @@ nav{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: drop-shadow(0px -25px 34px #ffffff11);
     
     
 }
@@ -233,11 +233,9 @@ nav{
     align-items: center;
     justify-content: center;  
     gap: 40px 20px;
-    padding-top: 100px;
-    max-height: 100%;
+    padding: 0rem;
+    min-height: 500px;
     max-width: 100%;
-    
-   
 }
 
 
@@ -245,8 +243,7 @@ nav{
     width: 390px;
     height: 200px;
     position: relative;
-    border-radius: 8px;
-    
+    border-radius: 8px; 
     -webkit-box-shadow: 0px 0px 10px 1px #787878; 
     box-shadow: 0px 0px 10px 1px #787878;
     transition: 0.4s;
@@ -389,11 +386,170 @@ nav{
   
 
 
+.footer{
+    max-width: 100%;
+    background-color: #ffcc00;
+    margin-top: 150px;
+    padding: 1rem;
+}
+
+.Contenitore_elementi_footer{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+    
+}
+
+.Logo_Footer{
+    max-width: 150px;
+    height: 200px;
+    text-align: center;
+   
+}
+.Logo_Footer h1{
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif; 
+}
+.Logo_Footer img{
+    width: 70%;
+    border-radius: 100px;
+}
+
+.Orari ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+   
+    
+}
+
+
+.Orari h1{
+    font-size: 22px;
+    text-align: left;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: underline #e91e63;
+    
+}
+
+
+.Orari li h4{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif; 
+
+}
+
+
+
+.Contatti ul{
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.Contatti h1{
+    font-size: 22px;
+    padding-bottom: 20px; 
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: underline #e91e63;
+}
+
+
+.Contatti li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif; 
+   
+  
+}
+
+.Contatti img{
+    width: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.Social ul{
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+   
+    
+}
+.Social li {
+    width: 35px;
+    height: 33px;   
+    border-radius: 50px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce97e;
+}
+.Social i{
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+}
+
+.Social h1{
+    font-size: 22px;
+    padding-bottom: 16px;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: underline #e91e63;
+}
+
+
 
 @media only screen and (max-width: 992px) {
    
+    .container{
+    min-height: 100%;
+    }
 
+    .Card1{
+        height: 250px;
+    }
 
+    .Card2{
+        height: 250px;
+    }
+
+    .Card3{
+        height: 250px;
+    }
+    .Contenitore_elementi_footer{
+        
+        flex-direction: column;
+        align-items:flex-start;
+        padding-left: 80px;
+    }
+
+    .Orari h1{
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .Contatti h1{
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .Social h1{
+        padding-top: 20px;
+    }
     .nav-links{
         display: flex;
         justify-content: space-around;
@@ -402,6 +558,9 @@ nav{
         margin-top: 42px;
         
        
+    }
+    .Container_Staff h1{
+        margin-bottom: 40px;
     }
 
     #Left_Quote{
@@ -476,24 +635,38 @@ nav{
 
 #Right_Quote{
     right: 2%;
-    bottom: 20%;
+    bottom: 35%;
 }
 }
 
 @media only screen and (max-width: 650px) {
+    
+    .Container_Banner{
+        height: 350px;
+    }
+    
     .Container_Banner h2{
-        font-size: 26px;
+        font-size: 20px;
+        bottom: 23%;
     }
 
     .Container_Titolo_Bodybuilding h1{
-        font-size: 43px;
+        font-size: 32px;
     }
 
     .Container_Banner h1{
         font-size: 25px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
+    .Container_Banner span{
+        font-size: 30px;
+    }
+
+
+    .Container_Testo{
+        margin-top: 0px;
+    }
     .Container_Testo h1{
         font-size: 25px;
     }
@@ -501,20 +674,27 @@ nav{
     .Container_Staff h1{
         font-size: 30px;
     }
+    .Container_Frase{
+        margin-bottom: 55px;
+    }
 
     .Container_Frase h1{
         font-size: 20px;
     }
 
     #Left_Quote{
-        left: 4%;
+        left: 2%;
         top: 20%;
         width: 50px;
     }
 
 
     #Right_Quote{
-        right: 0%;
-        bottom: 20%;
+        right: 3%;
+        bottom: 34%;
+    }
+
+    .Contenitore_elementi_footer{
+        padding-left: 0px;
     }
 }
