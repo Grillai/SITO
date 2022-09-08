@@ -602,8 +602,7 @@ nav{
     background-color: #ffcc00;
     width: 100%;
     height: 84%;
-    text-align: center;
-    transition: 0.5s;
+    transition: 200ms cubic-bezier(.17,.67,.83,.67);
     z-index: 1;
 
 
