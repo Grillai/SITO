@@ -1,807 +1,675 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
-
-html{
-    scroll-behavior: smooth;
-    height: 100%;
+html {
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
-body{
-    background-color: #000000;
-    font-family: 'Open Sans', sans-serif;    
-    margin: 0px;
-    padding: 0px;
-    
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    
+body {
+  background-color: #000000;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /* barra navigazione */
-nav{
-    
-    width: 100%;
-    background-color: #030303;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    border-bottom: 4px solid #ffcc00e0;
-    
+nav {
+  width: 100%;
+  background-color: #030303;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  border-bottom: 4px solid #ffcc00e0;
 }
-
-
-
 
 /* Link della barra di navigazione */
 
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    list-style: none;
-    margin-top: 42px;
-    
-   
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+  margin-top: 42px;
 }
 
 /* animazione del cambio colore  */
-.nav-links a{
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 16px;
-    transition: 0.2s;
+.nav-links a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 16px;
+  transition: 0.2s;
 }
 
-.nav-links a:hover{
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    color: #ffcc00e0;
-    letter-spacing: 3px;
+.nav-links a:hover {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: #ffcc00e0;
+  letter-spacing: 3px;
 }
 
 /* animazione della traslazione asse y  */
 
-.nav-links li{
-    transition: 0.5s;
-
+.nav-links li {
+  transition: 0.5s;
 }
 
-.nav-links li:hover{
-    transform: translateY(-3px);
+.nav-links li:hover {
+  transform: translateY(-3px);
 }
 
 /* grandezza logo v-sport  */
 
-.logo img{
-    height: 100px;
-    width: 104px;
-   
+.logo img {
+  height: 100px;
+  width: 104px;
 }
+
 /* grandezza logo v-sport  */
 
-.hamburger{
-    display: none;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
+.hamburger {
+  display: none;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
 }
 
-.bar{
-    display: block;
-    width: 29px;
-    height: 3px;
-    margin: 5px auto;
-    transition: 0.3s ease-in-out;
-    background-color: #ffcc00e0;
+.bar {
+  display: block;
+  width: 29px;
+  height: 3px;
+  margin: 5px auto;
+  transition: 0.3s ease-in-out;
+  background-color: #ffcc00e0;
 }
 
-
- /* barra navigazione */
-
+/* barra navigazione */
 
 /*Banner*/
-.Banner{
-    position: relative;
-    text-align: center;
-    background-color: #030303;   
-    
-    
+.Banner {
+  position: relative;
+  text-align: center;
+  background-color: #030303;
 }
 
-.Banner img{
-    width: 100%;
-    height: 84vh;
-    padding-top: 0px; 
-    opacity: 70%;
-    object-fit: cover;
-    
-    
-    
+.Banner img {
+  width: 100%;
+  height: 84vh;
+  padding-top: 0px;
+  opacity: 70%;
+  object-fit: cover;
 }
 
-.testo{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff ;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 2px 2px 2px #000000;
-    font-size: 69px;
-    font-weight: 900;
-    letter-spacing: 4px;
-   
-    
-   
+.testo {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 69px;
+  font-weight: 900;
+  letter-spacing: 4px;
 }
 
-.testo2{
-    width: 100%;
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffcc00e0 ;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 2px 2px 2px #000000;
-    font-size: 68px;
-    font-weight: 900;
-    letter-spacing: 4px;    
-  
-    
+.testo2 {
+  width: 100%;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffcc00e0;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 68px;
+  font-weight: 900;
+  letter-spacing: 4px;
 }
+
 /*Banner*/
 
 /*Scritta SERVIZI*/
 
-.Container_Titolo{
-    margin: 90px auto;
-    margin-bottom: 100px;
-    width: 100%;
-    text-align: center;
-    
-    
+.Container_Titolo {
+  margin: 90px auto;
+  margin-bottom: 100px;
+  width: 100%;
+  text-align: center;
 }
- 
-.Container_Titolo h2{
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    font-size: 42px;
-    letter-spacing: 2px;
-   
-   
+
+.Container_Titolo h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 42px;
+  letter-spacing: 2px;
 }
+
 /*Scirtte sui Servizi*/
 
 /*Griglia Serivizi---------------------------------------------------------------------------------*/
 
-
 .Sezione_Servizi {
-    display: inline-flex; 
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;  
-    gap: 90px 60px;
-    padding: 0;  
-    max-height: 100%;
-    max-width: 100%;
-    
-  
-}
-    
-.Sezione_Servizi .div1{
-    width: 25%;
-    height: 320px;
-    padding: 0px 0px;
-    position: relative;
-    padding: -1rem;
-   
-    
-}
-   
-.Sezione_Servizi .div2{
-    width: 25%;
-    height: 320px;
-    position: relative;
-    padding: -1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 90px 60px;
+  padding: 0;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-.Sezione_Servizi .div3{
-    width: 25%;
-    height: 320px;
-    position: relative;
-    padding: -1rem;
-}
-.Sezione_Servizi .div4{
-    width: 25%;
-    height: 320px;
-    position: relative;
-    padding: -1rem;
-}
-.Sezione_Servizi img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    -webkit-box-shadow: 0px 0px 0px 3px #ffcc00; 
-    box-shadow: 0px 0px 0px 3px #ffcc00;
-    border-radius: 10px;
-    transition: 0.5s;   
-   
+.Sezione_Servizi .div1 {
+  width: 25%;
+  height: 320px;
+  padding: 0px 0px;
+  position: relative;
+  padding: -1rem;
 }
 
-.Sezione_Servizi img:hover{
-    -webkit-box-shadow: 0px 0px 23px -2px #ffffffe0; 
-    box-shadow: 0px 0px 23px 2px #ffffffe0;
-    transform: scale(1.1);  
-    opacity: 60%;
+.Sezione_Servizi .div2 {
+  width: 25%;
+  height: 320px;
+  position: relative;
+  padding: -1rem;
 }
 
-.div1 figcaption a{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    text-decoration: none;
-    max-width: 100%;
-    height: 20%;
-    padding-top: 20px;   
-    opacity: 0; 
-    transition: 0.5s;
-    font-size: 20px;
-    font-weight: 900;
-  
-    
-    
+.Sezione_Servizi .div3 {
+  width: 25%;
+  height: 320px;
+  position: relative;
+  padding: -1rem;
 }
 
-
-.div1:hover figcaption a{
-    opacity: 1;
-    color: #ffcc00e0;
-    text-shadow: 2px 2px 2px #000000;
-    
+.Sezione_Servizi .div4 {
+  width: 25%;
+  height: 320px;
+  position: relative;
+  padding: -1rem;
 }
 
-
-.div2 figcaption a{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    text-decoration: none;
-    max-width: 100%;
-    height: 20%;
-    padding-top: 20px;   
-    opacity: 0; 
-    transition: 0.5s;
-    font-size: 20px;
-    font-weight: 900;
-  
-    
-    
+.Sezione_Servizi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-shadow: 0px 0px 0px 3px #ffcc00;
+  box-shadow: 0px 0px 0px 3px #ffcc00;
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
-
-.div2:hover figcaption a{
-    opacity: 1;
-    color: #ffcc00e0;
-    text-shadow: 2px 2px 2px #000000;
-    
+.Sezione_Servizi img:hover {
+  -webkit-box-shadow: 0px 0px 23px -2px #ffffffe0;
+  box-shadow: 0px 0px 23px 2px #ffffffe0;
+  transform: scale(1.1);
+  opacity: 60%;
 }
 
-
-.div3 figcaption a{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    text-decoration: none;
-    max-width: 100%;
-    height: 20%;
-    padding-top: 20px;   
-    opacity: 0; 
-    transition: 0.5s;
-    font-size: 20px;
-    font-weight: 900;
-  
-    
-    
+.div1 figcaption a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-decoration: none;
+  max-width: 100%;
+  height: 20%;
+  padding-top: 20px;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 32px;
+  font-weight: 900;
 }
 
-
-.div3:hover figcaption a{
-    opacity: 1;
-    color: #ffcc00e0;
-    text-shadow: 2px 2px 2px #000000;
-    
+.div1:hover figcaption a {
+  opacity: 1;
+  color: #ffcc00e0;
+  text-shadow: 2px 2px 2px #000000;
 }
 
-.div4 figcaption a{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    text-decoration: none;
-    max-width: 100%;
-    height: 20%;
-    padding-top: 20px;   
-    opacity: 0; 
-    transition: 0.5s;
-    font-size: 20px;
-    font-weight: 900;
-  
-    
-    
+.div2 figcaption a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-decoration: none;
+  max-width: 100%;
+  height: 20%;
+  padding-top: 20px;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 32px;
+  font-weight: 900;
 }
 
-
-.div4:hover figcaption a{
-    opacity: 1;
-    color: #ffcc00e0;
-    text-shadow: 2px 2px 2px #000000;
-    
+.div2:hover figcaption a {
+  opacity: 1;
+  color: #ffcc00e0;
+  text-shadow: 2px 2px 2px #000000;
 }
 
+.div3 figcaption a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-decoration: none;
+  max-width: 100%;
+  height: 20%;
+  padding-top: 20px;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 32px;
+  font-weight: 900;
+}
 
+.div3:hover figcaption a {
+  opacity: 1;
+  color: #ffcc00e0;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.div4 figcaption a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-decoration: none;
+  max-width: 100%;
+  height: 20%;
+  padding-top: 20px;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.div4:hover figcaption a {
+  opacity: 1;
+  color: #ffcc00e0;
+  text-shadow: 2px 2px 2px #000000;
+}
 
 /*Griglia Serivizi---------------------------------------------------------------------------------*/
 
+/*ABBONAMENTI*/
 
+.Container_Abbonamenti_Titolo {
+  margin: 160px auto;
+  margin-bottom: 70px;
 
+  width: 100%;
+  text-align: center;
+}
+
+.Container_Abbonamenti_Titolo h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 42px;
+  letter-spacing: 2px;
+  padding-right: 10px;
+}
+
+.Container_Abbonamenti {
+  width: 100%;
+  display: flex;
+  padding-right: 35px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Pacchetto_1 {
+  position: relative;
+  margin: 10px 20px;
+  height: 450px;
+  width: 350px;
+  text-align: center;
+  background-color: #000000;
+  -webkit-box-shadow: 0px 0px 8px 1px #ffffff;
+  box-shadow: 0px 0px 4px 1px #ffcc00e0;
+
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.Pacchetto_centrale {
+  position: relative;
+  margin: 10px 20px;
+  height: 500px;
+  width: 350px;
+  text-align: center;
+
+  background-color: #000000;
+  -webkit-box-shadow: 0px 0px 8px 1px #ffffff;
+  box-shadow: 0px 0px 4px 1px #ffcc00e0;
+  border-radius: 10px;
+}
+
+.Pacchetto_3 {
+  position: relative;
+  margin: 10px 10px;
+  height: 450px;
+  width: 350px;
+  text-align: center;
+  background-color: #000000;
+  -webkit-box-shadow: 0px 0px 8px 1px #ffffff;
+  box-shadow: 0px 0px 4px 1px #ffcc00e0;
+  border-radius: 10px;
+}
+
+.Testo {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 19.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7cb15;
+  font-size: 44px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 55px;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+
+.Testo2 {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 74px;
+  padding-top: 80px;
+  font-family: "Montserrat", sans-serif;
+}
 
 /*ABBONAMENTI*/
 
-.Container_Abbonamenti_Titolo{
-    margin: 160px auto;
-    margin-bottom: 70px;
-    
-    width: 100%;
-    text-align: center;
+.Container_Staff_Titolo {
+  margin: 160px auto;
+  margin-bottom: 70px;
+
+  width: 100%;
+  text-align: center;
 }
 
-
-
- 
-.Container_Abbonamenti_Titolo h2{
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    font-size: 42px;
-    letter-spacing: 2px;
-    padding-right: 10px; 
-   
+.Container_Staff_Titolo h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 42px;
+  letter-spacing: 2px;
+  padding-right: 10px;
 }
 
-
-.Container_Abbonamenti{
-    width: 100%;
-    display: flex;
-    padding-right: 35px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px 20px;
+  padding: 0;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-.Pacchetto_1{
-    position: relative;
-    margin: 10px 20px;
-    height: 450px;
-    width: 350px;
-    text-align: center;
-    background-color: #000000;
-    -webkit-box-shadow: 0px 0px 8px 1px #FFFFFF; 
-    box-shadow: 0px 0px 4px 1px #ffcc00e0;
-   
-    border-radius: 10px;
-    transition: 0.4s;
-    
+.social-links2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 29px 0px;
 }
 
-.Pacchetto_centrale{
-    position: relative;
-    margin: 10px 20px;
-    height: 500px;
-    width: 350px;
-    text-align: center;
-
-    background-color: #000000;
-    -webkit-box-shadow: 0px 0px 8px 1px #FFFFFF; 
-    box-shadow: 0px 0px 4px 1px #ffcc00e0;
-    border-radius: 10px;
-    
+.social-links2 a {
+  background-color: #000000;
+  border-radius: 100px;
+  transition: 0.4s;
 }
 
-
-.Pacchetto_3{
-    position: relative;
-    margin: 10px 10px;
-    height: 450px;
-    width: 350px;
-    text-align: center;
-    background-color: #000000;
-    -webkit-box-shadow: 0px 0px 8px 1px #FFFFFF; 
-    box-shadow: 0px 0px 4px 1px #ffcc00e0;
-    border-radius: 10px;
-   
+.social-links2 a:hover {
+  transform: translateY(-5px);
 }
 
-
-
-
-
-.Testo{
-    width: 100%;
-    height: 40%;
-    position: absolute;
-    top: 19.4%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f7cb15;
-    font-size: 44px;
-    font-weight:600;
-    font-family: 'Montserrat', sans-serif;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-top: 55px;
-    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
-    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
-    
+.social-links2 i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-.Testo2{
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 74px;
-    padding-top: 80px;
-    font-family: 'Montserrat', sans-serif;
-}
-/*ABBONAMENTI*/
+.Card1 {
+  width: 320px;
+  height: 200px;
+  position: relative;
+  border-radius: 8px;
 
-
-
-
-.Container_Staff_Titolo{
-    margin: 160px auto;
-    margin-bottom: 70px;
-    
-    width: 100%;
-    text-align: center;
-
-    
+  -webkit-box-shadow: 0px 0px 10px 1px #787878;
+  box-shadow: 0px 0px 10px 1px #787878;
+  transition: 0.4s;
+  overflow: hidden;
+  background-color: #f7cb15;
 }
 
-.Container_Staff_Titolo h2{
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    font-size: 42px;
-    letter-spacing: 2px;
-    padding-right: 10px; 
-   
+.Card1:hover {
+  height: 250px;
 }
 
-
-.container{
-    display: flex; 
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;  
-    gap: 40px 20px;
-    padding: 0;
-    max-height: 100%;
-    max-width: 100%;
-    
-   
-}
-
-.social-links2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 29px 0px;
-
-    
-}
-
-.social-links2 a{
-    background-color: #000000;
-    border-radius: 100px;
-    transition: 0.4s;
-    
-}
-.social-links2 a:hover{
-    transform: translateY(-5px);
-}
-
-.social-links2 i{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    
-}
-
-
-
-
-
-  
-.Card1 { 
-    width: 320px;
-    height: 200px;
-    position: relative;
-    border-radius: 8px;
-    
-    -webkit-box-shadow: 0px 0px 10px 1px #787878; 
-    box-shadow: 0px 0px 10px 1px #787878;
-    transition: 0.4s;
-    overflow: hidden;
-    background-color: #f7cb15;
-    
-}
-
-.Card1:hover{ 
-    height: 250px;   
-   
-}
-
-
-  
 .Card2 {
-    width: 320px;
-    height: 200px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 0px 10px 1px #787878; 
-    box-shadow: 0px 0px 10px 1px #787878;
-    transition: 0.4s;
-    background-color: #f7cb15;
-    overflow: hidden;
-    
-   
+  width: 320px;
+  height: 200px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 1px #787878;
+  box-shadow: 0px 0px 10px 1px #787878;
+  transition: 0.4s;
+  background-color: #f7cb15;
+  overflow: hidden;
 }
-.Card2:hover{ 
-    height: 250px;
-    
+
+.Card2:hover {
+  height: 250px;
 }
-  
+
 .Card3 {
-    width: 320px;
-    height: 200px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 0px 10px 1px #787878; 
-    box-shadow: 0px 0px 10px 1px #787878;
-    transition: 0.4s;
-    background-color: #f7cb15;
-    overflow: hidden;
-    
-    
-    
+  width: 320px;
+  height: 200px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 1px #787878;
+  box-shadow: 0px 0px 10px 1px #787878;
+  transition: 0.4s;
+  background-color: #f7cb15;
+  overflow: hidden;
 }
-.Card3:hover{ 
-    height: 250px;
-    
+
+.Card3:hover {
+  height: 250px;
 }
-  
+
 .Card4 {
-    width: 320px;
-    height: 200px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 0px 10px 1px #787878; 
-    box-shadow: 0px 0px 10px 1px #787878;
-    transition: 0.4s;
-    background-color: #f7cb15;
-    overflow: hidden;
-    
-    
-    
-}
-.Card4:hover{ 
-    height: 250px;
-    
+  width: 320px;
+  height: 200px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 1px #787878;
+  box-shadow: 0px 0px 10px 1px #787878;
+  transition: 0.4s;
+  background-color: #f7cb15;
+  overflow: hidden;
 }
 
-.Image_Profile{
-    text-align: center;
-    width: 100%;
-    height: 200px;
-    position: relative;
-    
-    
+.Card4:hover {
+  height: 250px;
 }
 
-.Image_Profile img{
-    width: 100px;
-    height: 100px;
-   
-    object-fit: cover;
-    position: absolute;
-    margin: 0;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 100px;
-    border: 4px solid rgb(0, 0, 0);
-    
-    
+.Image_Profile {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  position: relative;
 }
 
-.Image_Profile h1{
-    position: absolute;
-    top: 56%;
-    font-size: 24px;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    
+.Image_Profile img {
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+  position: absolute;
+  margin: 0;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  border: 4px solid rgb(0, 0, 0);
 }
 
-.Image_Profile h5{
-    position: absolute;
-    top: 69%;
-    font-size: 18px;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    
+.Image_Profile h1 {
+  position: absolute;
+  top: 64%;
+  font-size: 24px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
-  
 
-
-
-
-
+.Image_Profile h5 {
+  position: absolute;
+  top: 75%;
+  font-size: 18px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
 
 /*CONTATTACI_______________________________*/
 
+.Container_Contattaci_Titolo {
+  margin: 160px auto;
+  margin-bottom: 70px;
 
-
-
-
-
-.Container_Contattaci_Titolo{
-    margin: 160px auto;
-    margin-bottom: 70px;
-   
-    width: 100%;
-    text-align: center;
-    
+  width: 100%;
+  text-align: center;
 }
 
-.Container_Contattaci_Titolo h2{
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    font-size: 42px;
-    letter-spacing: 2px;
-    padding-right: 10px;
-    
-   
+.Container_Contattaci_Titolo h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 42px;
+  letter-spacing: 2px;
+  padding-right: 10px;
 }
 
-
-
-.Container_Contattaci{
-    width: 100%;
-    height: 700px;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
+.Container_Contattaci {
+  width: 100%;
+  height: 700px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-
-.Contattaci_sinistra{
-    height: 100%;
-    width: 50%;
-    margin-left: 90px;
-    
+.Contattaci_sinistra {
+  height: 100%;
+  width: 50%;
+  margin-left: 90px;
 }
 
-
-.Contattaci_sinistra iframe{
-   width: 100%;
-   height: 100%;
-   border-bottom-left-radius: 20px;
-   border-top-left-radius: 20px;
-   
+.Contattaci_sinistra iframe {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
-
-.Contattaci_destra{
-    background-color: #000000e0;
-    border: 2px solid #ffcc00e0;
-    height: 100%;
-    width: 50%;
-    margin-right: 90px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius:20px;
+.Contattaci_destra {
+  background-color: #000000e0;
+  border: 2px solid #ffcc00e0;
+  height: 100%;
+  width: 50%;
+  margin-right: 90px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.form-group{
-    width: 80%;
-    margin: 20px auto;
+.form-group {
+  width: 80%;
+  margin: 20px auto;
 }
 
-.Nome{
-    padding-top: 60px;
-    height: 120px;
-    
+.Nome {
+  padding-top: 60px;
+  height: 120px;
 }
 
-.Nome h2{
-    margin-top: -50px;
-    color: #ffcc00e0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+.Nome h2 {
+  margin-top: -50px;
+  color: #ffcc00e0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
-.E_Mail{
-    padding-top: 60px;
-    height: 120px;
-
+.E_Mail {
+  padding-top: 60px;
+  height: 120px;
 }
 
-.E_Mail h2{
-    margin-top: -20px;
-    color: #ffcc00e0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+.E_Mail h2 {
+  margin-top: -20px;
+  color: #ffcc00e0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
-
-
-
-.form-control{
-    height: 100%;
+.form-control {
+  height: 100%;
 }
 
-.Messaggio{
-    width: 80%;
-    margin: 20px auto;
-    padding-top: 60px;
+.Messaggio {
+  width: 80%;
+  margin: 20px auto;
+  padding-top: 60px;
+}
+
+button {
+  position: absolute;
+  top: 92%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  color: #ffffff !important;
+  background-color: #ffcc00e0 !important;
+  text-shadow: 2px 2px 2px #000000;
+  transition: 0.4s;
+}
+
+button:active {
+  background-color: #ffffffe0 !important;
+  color: #ffcc00e0 !important;
 }
 
 
-button{
-    position: absolute;
-    top: 92%;
-    left: 72%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    color: #FFFFFF !important;
-    background-color: #ffcc00e0 !important;
-    text-shadow: 2px 2px 2px #000000;
-    transition: 0.4s;
-}
 
-
-button:active{
-    background-color: #ffffffe0 !important;
-    color: #ffcc00e0 !important;
-}
-
-
-.to-top{
+.to-top {
   width: 43px;
   height: 43px;
-  text-align: center;  
+  text-align: center;
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -809,549 +677,495 @@ button:active{
   border-radius: 100px;
   opacity: 0;
   pointer-events: none;
-  transition: .4s;
-    
+  transition: 0.4s;
 }
 
-
-
-.to-top img{
-    width: 100%;
+.to-top img {
+  width: 100%;
 }
 
-.to-top.active{
-    opacity: 1;
-    pointer-events:auto;
+.to-top.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-
-.footer{
-    max-width: 100%;
-    background-color: #ffcc00;
-    margin-top: 100px;
-    padding: 1rem;
+.footer {
+  max-width: 100%;
+  background-color: #ffcc00;
+  margin-top: 225px;
+  padding: 3rem;
 }
 
-.Contenitore_elementi_footer{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 auto;
-    
-    
+.Contenitore_elementi_footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
-.Logo_Footer{
-    max-width: 150px;
-    height: 200px;
-    text-align: center;
-   
-}
-.Logo_Footer h1{
-    font-size: 28px;
-    font-family: 'Montserrat', sans-serif; 
-}
-.Logo_Footer img{
-    width: 70%;
-    border-radius: 100px;
+.Logo_Footer {
+  max-width: 150px;
+  height: 200px;
+  text-align: center;
 }
 
-.Orari ul{
-    list-style: none;
-    padding: 0px;
-   
-    
-}
-.Orari h1{
-    font-size: 22px;
-    text-align: left;
-    padding-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; 
-    text-decoration: underline #e91e63;
-    
+.Logo_Footer h1 {
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.Orari li{
-    padding: 6px;
-    
-   
-}
-.Orari li h4{
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif; 
-
+.Logo_Footer img {
+  width: 70%;
+  border-radius: 100px;
 }
 
-.Contatti ul{
-    list-style: none;
-    padding: 0px;
+.Orari ul {
+  list-style: none;
+  padding: 0px;
 }
 
-.Contatti h1{
-    font-size: 22px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif; 
-    text-decoration: underline #e91e63;
+.Orari h1 {
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline #e91e63;
 }
 
-.Contatti li a{
-    text-decoration: none;
-    color: #000000;
-    font-weight: 100;
-    font-family: 'Montserrat', sans-serif; 
+.Orari li {
+  padding: 6px;
 }
 
-.Social ul{
-    list-style: none;
-    padding-left: 0px;
-    display: flex;
-   
-    
+.Orari li h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
+
+.Contatti ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.Contatti h1 {
+  font-size: 22px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline #e91e63;
+}
+
+.Contatti li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Social ul {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+}
+
 .Social li {
-    width: 35px;
-    height: 33px;   
-    border-radius: 50px;
-    margin-right: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fce97e;
-}
-.Social i{
-    font-size: 19px;
-    
-    color: rgb(0, 0, 0);
+  width: 35px;
+  height: 33px;
+  border-radius: 50px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fce97e;
 }
 
-.Social h1{
-    font-size: 22px;
-    padding-bottom: 16px;
-    font-family: 'Montserrat', sans-serif; 
-    text-decoration: underline #e91e63;
+.Social i {
+  font-size: 19px;
+
+  color: rgb(0, 0, 0);
 }
 
+.Social h1 {
+  font-size: 22px;
+  padding-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline #e91e63;
+}
 
 /*responsive*/
 
-  
+@media screen and (max-width: 991px) {
+  .Contenitore_elementi_footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0px;
 
+  }
 
+  .Orari h1 {
+    text-align: left;
+  }
 
-@media screen  and (max-width: 991px){
-   
+  .Contatti h1 {
+    text-align: left;
+  }
 
+  .nav-links {
+    width: 80%;
+  }
 
-    .Contenitore_elementi_footer{
-        
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 0px;
-    }
-
-    .Orari h1{
-        text-align: left;
-    }
-
-    .Contatti h1{
-        text-align: left;
-    }
-
-   .nav-links{
-       
-       width: 80%;
-       
-      
-   }
-
-   .Container_Abbonamenti{
-    
+  .Container_Abbonamenti {
     padding-right: 0px;
-    
-    
-    }
+  }
 
-    .Pacchetto_centrale{
+  .Pacchetto_centrale {
     position: relative;
     margin: 10px 20px;
     height: 450px;
-    }
-    
+  }
 
-      
+  .div1 figcaption a {
+    font-size: 32px;
+  }
 
-       .div1 figcaption a{
-           
-           font-size: 32px;
-           
-          
-       }
+  .div2 figcaption a {
+    font-size: 32px;
+  }
 
-       .div2 figcaption a{
-           font-size: 32px;
-       }
-       .div3 figcaption a{
-           font-size: 32px;
-       }
-       .div4 figcaption a{
-           font-size: 32px;
-       }
+  .div3 figcaption a {
+    font-size: 32px;
+  }
 
-       .Sezione_Servizi .div1{
-            width: 500px;
-            height: 300px;
-                   
-                   
-       }
-       .Sezione_Servizi .div2{
-           width: 500px;
-           height: 300px;
-           
-           
-           
-       }
-       .Sezione_Servizi .div3{
-           width: 500px;
-           height: 300px;
-           
-           
-           
-       }
-       .Sezione_Servizi .div4{
-           width: 500px;
-           height: 300px;
-           
-           
-       }
+  .div4 figcaption a {
+    font-size: 32px;
+  }
 
+  .Sezione_Servizi .div1 {
+    width: 500px;
+    height: 300px;
+  }
 
-       button{
-        position: absolute;
-        top: 92%;
-        left: 70%;
-        transform: translate(-50%, -50%);
-        
-    }
+  .Sezione_Servizi .div2 {
+    width: 500px;
+    height: 300px;
+  }
+
+  .Sezione_Servizi .div3 {
+    width: 500px;
+    height: 300px;
+  }
+
+  .Sezione_Servizi .div4 {
+    width: 500px;
+    height: 300px;
+  }
+
+  button {
+    position: absolute;
+    top: 92%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+
 
 }
 
+@media screen and (max-width: 770px) {
+  .Pacchetto_3 {
+    width: 350px;
+    margin: 10px 20px;
+  }
 
-@media screen and (max-width:770px) {
-   
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 40px;
+  }
 
-    .Pacchetto_3{
-        width: 350px;
-        margin: 10px 20px;
-    }
-    .hamburger{
-        display: block;
-        position: absolute;
-        left: 85%;
-        top: 40px;
-        
-     }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-     .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-     }
-     .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(225deg);
-     }
-     .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-225deg);
-     }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(225deg);
+  }
 
-     .nav-links{
-        position: absolute;
-        left: -100%;  
-        top: 62px;     
-        gap: 0;
-        flex-direction: column;
-        background-color: #ffcc00;
-        width: 100%;
-        height: 84%;
-        transition: 0s;
-        z-index: 1;
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-225deg);
+  }
+
+  .nav-links {
+    position: absolute;
+    left: -100%;
+    top: 62px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffcc00;
+    width: 100%;
+    height: 84%;
+    transition: 0s;
+    z-index: 1;
+  }
+
+  .nav-links li {
+    margin: 16px auto;
+    z-index: 1;
+  }
+
+  .nav-links a:hover {
+    color: #000000;
+  }
+
+  .nav-links a {
+    color: #000000;
+    font-weight: 900;
+    font-size: 22px;
+  }
+
+  .nav-links.active {
+    left: 0px;
+    z-index: 1;
+    padding: 0px;
+  }
+
+  .testo {
+    font-size: 35px;
+    letter-spacing: 0px;
+  }
+
+  .testo2 {
+    font-size: 40px;
+    letter-spacing: 0px;
+  }
+
+  .Sezione_Servizi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .Sezione_Servizi img {
+    opacity: 60%;
+  }
+
+  .Sezione_Servizi img:hover {
+    transform: none;
+  }
+
+  .div1 {
+    max-width: 90%;
+    height: 280px;
+    font-size: 16px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .div1 figcaption a {
+    opacity: 1;
+    color: #ffcc00;
+  }
+
+  .div2 {
+    max-width: 90%;
+    height: 280px;
+    font-size: 16px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .div2 figcaption a {
+    opacity: 1;
+    color: #ffcc00;
+  }
+
+  .div3 {
+    max-width: 90%;
+    height: 280px;
+    font-size: 16px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .div3 figcaption a {
+    opacity: 1;
+    color: #ffcc00;
+  }
+
+  .div4 {
+    max-width: 90%;
+    height: 280px;
+    font-size: 16px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .div4 figcaption a {
+    opacity: 1;
+    color: #ffcc00;
+  }
+
+  .Container_Titolo {
+    margin: 100px auto;
+    margin-bottom: 30px;
+  }
+
+  .Container_Titolo h2 {
+    font-size: 26px;
+  }
+
+  .Container_Abbonamenti_Titolo {
+    margin: 100px auto;
+    margin-bottom: 30px;
+  }
+
+  .Container_Abbonamenti_Titolo h2 {
+    font-size: 26px;
+  }
+
+  .Container_Abbonamenti {
+    width: 100%;
+    display: flex;
+    padding-right: 0px;
+  }
+
+  .Pacchetto_1 {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .Pacchetto_centrale {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .Pacchetto_3 {
+    width: 90%;
+  }
+
+  .Container_Staff_Titolo {
+    margin: 100px auto;
+    margin-bottom: 30px;
+  }
+
+  .Container_Staff_Titolo h2 {
+    font-size: 26px;
+  }
+
+  .Card1 {
+    width: 90%;
+    overflow: auto !important;
+    height: 250px;
+  }
+
+  .Card2 {
+    width: 90%;
+    overflow: auto !important;
+    height: 250px;
+  }
+
+  .Card3 {
+    width: 90%;
+    overflow: auto !important;
+    height: 250px;
+  }
+
+  .Card4 {
+    width: 90%;
+    overflow: auto !important;
+    height: 250px;
+  }
+
+  .Container_Contattaci_Titolo {
+    margin: 100px auto;
+    margin-bottom: 0px;
+  }
+
+  .Container_Contattaci_Titolo h2 {
+    font-size: 26px;
+  }
+
+  .Container_Contattaci {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .Contattaci_destra {
+    margin: 0px auto;
+    width: 90%;
+    height: 55%;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .Contattaci_sinistra {
+    margin: 0 auto;
+    height: 40%;
+    width: 90%;
+    border-radius: 0px;
+  }
+
+  .Contattaci_sinistra iframe {
+    border-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+  }
+
+  button {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 72%;
+  }
+
+  button:active {
+    background-color: #ffd738e0;
+  }
+
+  .Nome {
+    padding-top: 0px;
+    height: 40px;
+  }
+
+  .Nome h2 {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .E_Mail {
+    padding-top: 0px;
+    margin-top: 80px;
+    height: 40px;
+  }
+
+  .E_Mail h2 {
+    font-size: 20px;
+  }
+
+  .Messaggio {
+    margin-top: 20px;
+  }
+
+  .Contatti h1 {
+    padding-top: 10px;
+  }
+
+  .Social h1 {
+    padding-top: 10px;
+  }
 
 
-     }
+  .footer {
+    padding: 1rem;
+  }
 
-     .nav-links li{
-        margin: 16px auto;       
-        z-index: 1;
-        
-        
-     }
-
-     .nav-links a:hover{
-        color: #000000;
-        
-     }
-     .nav-links a{
-        color: #000000;
-        font-weight: 900;
-        font-size: 22px;
-       
-     }
-
-     .nav-links.active{
-        left: 0px;
-        z-index: 1;
-        padding: 0px;
-      
-     }
-
-     
-    
-    .testo{
-        font-size: 35px;
-        letter-spacing: 0px;
-    }
-    .testo2{
-        font-size: 40px;        
-        letter-spacing: 0px;
-    }
-
-    .Sezione_Servizi{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        margin: 0px;
-    }
-
-
-    .Sezione_Servizi img{  
-        opacity: 60%;
-        
-    }
-    .Sezione_Servizi img:hover{
-        transform:none;  
-    }
-    
-    .div1{
-        max-width: 90%;
-        height: 280px;
-        font-size: 16px;
-        padding-left: 0;
-        margin: 0;
-       
-    }
-   
-    .div1 figcaption a{
-        opacity: 1;  
-        color: #ffcc00;   
-        
-    }
-
-    
-   
-    .div2{
-        max-width: 90%;
-        height: 280px;
-        font-size: 16px;
-        padding-left: 0;
-        margin: 0;
-    }
-
-    .div2 figcaption a{
-        opacity: 1;  
-        color: #ffcc00;     
-      
-    }
-
-    
-    .div3{
-        max-width: 90%;
-        height: 280px;
-        font-size: 16px;
-        padding-left: 0;
-        margin: 0;
-        
-    }
-    .div3 figcaption a{
-        opacity: 1;  
-        color: #ffcc00;     
-       
-    }
-
-    .div4{
-        max-width: 90%;
-        height: 280px;
-        font-size: 16px;
-        padding-left: 0;
-        margin: 0;
-        
-    }
-    .div4 figcaption a{
-        opacity: 1;  
-        color: #ffcc00;   
-        
-    }
-    .Container_Titolo{
-        margin: 100px auto;
-        margin-bottom: 30px;
-    }
-
-    .Container_Titolo h2 {
-        
-        font-size: 26px;
-        
-    }
-
-    .Container_Abbonamenti_Titolo{
-        margin: 100px auto;
-        margin-bottom: 30px;
-    }
-    .Container_Abbonamenti_Titolo h2{
-       font-size: 26px;
-       
-    }
-
-
-
-    .Container_Abbonamenti{
-        width: 100%;
-        display: flex;
-        padding-right: 0px;
-        
-    }
-
-    .Pacchetto_1{
-        width: 90%;
-        margin-bottom: 40px;
-    }
-    .Pacchetto_centrale{
-        width: 90%;
-        margin-bottom: 40px;
-    }
-
-    .Pacchetto_3{
-        width: 90%;
-    }
-
-   .Container_Staff_Titolo{
-        margin: 100px auto;
-        margin-bottom: 30px;
-    
-    }
-    .Container_Staff_Titolo h2{
-        font-size: 26px;
-    }
-
-    .Card1{
-        width: 90%;
-        overflow: auto !important;
-        height: 250px;
-    }
-
-    .Card2{
-        width: 90%;
-        overflow: auto !important;
-        height: 250px;
-    }
-    .Card3{
-        width: 90%;
-        overflow: auto !important;
-        height: 250px;
-    }
-    .Card4{
-        width: 90%;
-        overflow: auto !important;
-        height: 250px;
-    }
-
-    .Container_Contattaci_Titolo{
-        margin: 100px auto;
-        margin-bottom: 0px;
-    }
-    .Container_Contattaci_Titolo h2{
-        font-size: 26px;
-    }
-    .Container_Contattaci{
-        width: 100%;
-        height: 1100px;
-        display: flex;
-        flex-direction: column-reverse;
-        
-        
-    }
-    
-    .Contattaci_destra{  
-        margin: 0px auto;
-        width: 90%;
-        height: 55%;
-        border-radius: 0;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-
-    .Contattaci_sinistra{
-        margin: 0 auto;
-        height: 40%;
-        width: 90%;
-        border-radius: 0px;
-    }
-    
-    .Contattaci_sinistra iframe{
-        border-radius: 0px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 100%;
-    }
-
-    button {
-        position: absolute;
-        top: 52%;
-        left: 50%;
-    }
-
-    button:active{
-        background-color: #ffd738e0;
-    }
-
-    .Nome{
-        padding-top: 0px;    
-        height: 40px;
-    }
-
-    .Nome h2{
-        margin-top: 0px;
-        font-size: 20px;
-       
-    }
-
-    .E_Mail{
-        padding-top: 0px;
-        margin-top: 80px;
-        height: 40px;
-    }
-
-    .E_Mail h2{
-        font-size: 20px;
-    }
-
-    .Messaggio{
-        margin-top: 20px;
-        
-    }
-
-    .Contatti h1{
-        padding-top: 10px;
-    }
-    
-    .Social h1{
-        padding-top: 10px;
-    }
-    .Contenitore_elementi_footer{
-        padding-left: 10px;
-    }
-    
 }
-
-

@@ -1,210 +1,524 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #030303;
-   
-    
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #030303;
+  height: 900vh;
 }
 
-
-nav{    
-    width: 100%;
-    background-color: #030303;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;   
-    border-bottom: 4px solid #ffcc00e0;
-    
+nav {
+  width: 100%;
+  background-color: #030303;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 4px solid #ffcc00e0;
 }
-
-
 
 /* Link della barra di navigazione */
 
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    list-style: none;
-    margin-top: 42px;
-    
-   
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+  margin-top: 42px;
 }
 
 /* animazione del cambio colore  */
-.nav-links a{
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 16px;
-    transition: 0.2s;
+.nav-links a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 16px;
+  transition: 0.2s;
 }
 
-.nav-links a:hover{
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    color: #ffcc00e0;
-    letter-spacing: 3px;
+.nav-links a:hover {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: #ffcc00e0;
+  letter-spacing: 3px;
 }
 
 /* animazione della traslazione asse y  */
 
-.nav-links li{
-    transition: 0.5s;
-
+.nav-links li {
+  transition: 0.5s;
 }
 
-.nav-links li:hover{
-    transform: translateY(-3px);
+.nav-links li:hover {
+  transform: translateY(-3px);
 }
 
 /* grandezza logo v-sport  */
 
-.logo img{
-    height: 100px;
-    width: 104px;
-   
+.logo img {
+  height: 100px;
+  width: 104px;
 }
+
 /* grandezza logo v-sport  */
 
-.hamburger{
-    display: none;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
+.hamburger {
+  display: none;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
 }
 
-.bar{
-    display: block;
-    width: 29px;
-    height: 3px;
-    margin: 5px auto;
-    transition: 0.3s ease-in-out;
-    background-color: #ffcc00e0;
+.bar {
+  display: block;
+  width: 29px;
+  height: 3px;
+  margin: 5px auto;
+  transition: 0.3s ease-in-out;
+  background-color: #ffcc00e0;
+}
+
+.Container_Titolo_Pugilato {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 3px;
+}
+
+.Container_Titolo_Pugilato h1 {
+  padding-right: 30px;
+  color: aliceblue;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Container_Banner {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #ffcc00;
+  justify-content: center;
+}
+
+.Container_Banner img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Container_Banner h1 {
+  width: 80%;
+  position: absolute;
+  top: 32%;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  font-size: 32px;
+  text-shadow: 0px 4px 1px rgb(0, 0, 0);
+
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.Container_Banner span {
+  color: #ffcc00;
+  font-size: 45px;
+}
+
+.Container_Banner h2 {
+  position: absolute;
+  color: aliceblue;
 }
 
 
-.Container_Titolo_Pugilato{
-    max-width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    letter-spacing: 3px;
+
+
+
+
+.Container_Titolo_Allenamenti {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.Container_Titolo_Allenamenti h1 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+}
+
+.Container_Titolo_Allenamenti span {
+  color: #ffcc00;
+}
+
+.Container_Contenuti {
+  max-width: 60%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
 
 }
 
-.Container_Titolo_Pugilato h1{
-    padding-right: 30px;
-    color: aliceblue;
-    font-size: 50px;
-    font-family: 'Montserrat', sans-serif; 
+.Parte_Sinistra {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Parte_Sinistra img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid aliceblue;
+}
+
+.Parte_Destra {
+  width: 50%;
+  padding: 0.5rem 2rem;
+
+}
+
+.Parte_Destra h5 {
+  color: aliceblue;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Container_Frase {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 300px;
+  background-color: #ffcc00;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Container_Frase h1 {
+  color: #000000;
+  width: 100%;
+  font-size: 25px;
+  position: relative;
+}
+
+#Left_Quote {
+  position: absolute;
+  width: 70px;
+  top: 19%;
+  left: 30%;
+  opacity: 40%;
+}
+
+#Right_Quote {
+  position: absolute;
+  right: 30%;
+  bottom: 32%;
+  width: 30px;
+}
+
+.Container_Frase h5 {
+  position: absolute;
+  bottom: 20%;
+  font-size: 16px;
+}
+
+.Titolo_Orari_Settimanali {
+  width: 100%;
+
+  text-align: center;
+  margin-top: 120px;
+}
+
+.Titolo_Orari_Settimanali h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  padding-left: 80px;
+  letter-spacing: 2px;
+
+
 }
 
 
-.Container_Banner{
-    width: 100%;
-    height: 700px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 2px solid #ffcc00;
-    justify-content:center;
+.Container_Orari_Pugilato {
+  width: 100%;
+  height: 600px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
 }
 
-.Container_Banner img{
-    max-width: 100%;
-    height: 100%;
-    object-fit: contain;
-    
+.Container_Orari_Pugilato img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1;
+
 }
+
+
+
 
 
 
 
 @media only screen and (max-width: 992px) {
+  .nav-links {
+    width: 70%;
+  }
 
-    .nav-links{
-        width: 70%;       
-       
-    }
+  .Container_Banner img {
+    object-fit: cover;
+  }
+
+  .Container_Banner h1 {
+    top: 40%;
+  }
+
+  .Container_Banner span {
+    font-size: 40px;
+  }
+
+  .Container_Orari_Pugilato {
+    height: 500px;
+  }
+
+
+  #Left_Quote {
+    left: 13%;
+    top: 9%;
+    opacity: 40%;
+  }
+
+  #Right_Quote {
+    right: 14%;
+    bottom: 20%;
+  }
 
 
 }
 
-
-
 @media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 40px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(225deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-225deg);
+  }
+
+  .nav-links {
+    position: absolute;
+    left: -114%;
+    top: 62px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffcc00;
+    width: 100%;
+    height: 84%;
+    transition: 0s;
+    z-index: 1;
+  }
+
+  .nav-links li {
+    margin: 16px auto;
+    z-index: 1;
+  }
+
+  .nav-links a:hover {
+    color: #000000;
+  }
+
+  .nav-links a {
+    color: #000000;
+    font-weight: 900;
+    font-size: 22px;
+  }
+
+  .nav-links.active {
+    left: 0px;
+    z-index: 1;
+    padding: 0px;
+  }
+
+  .Container_Titolo_Pugilato h1 {
+    padding: 0;
+  }
+
+  .Container_Banner {
+    height: 400px;
+  }
+
+  .Container_Banner img {
+    object-fit: cover;
+  }
+
+  .Container_Banner h1 {
+    top: 35%;
+    width: 100%;
+    font-size: 32px;
+  }
+
+  .Container_Banner span {
+    font-size: 46px;
+  }
+
+  .Container_Titolo_Allenamenti h1 {
+    font-size: 44px;
+
+  }
+
+  .Container_Contenuti {
+    flex-direction: column;
+
+    align-items: center;
+    height: 500px;
+    margin: 50px auto;
+  }
+
+  .Parte_Sinistra {
+    width: 120%;
+    height: 50%;
+
+  }
+
+  .Parte_Sinistra img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .Parte_Destra {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+
+  #Left_Quote {
+    left: 2%;
+    top: 9%;
+    opacity: 40%;
+  }
+
+  #Right_Quote {
+    right: 2%;
+    bottom: 28%;
+  }
+
+  .Container_Frase {
+    height: 250px;
+    margin-top: 0px;
+  }
+
+  .Container_Frase h5 {
+    bottom: 5%;
+  }
 
 
 
-    .hamburger{
-        display: block;
-        position: absolute;
-        left: 85%;
-        top: 40px;
-    }
+  .Container_Orari_Pugilato {
+    height: 450px;
+  }
+
+  .Titolo_Orari_Settimanali h1 {
+    margin: 0px;
+
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .Container_Titolo_Pugilato h1 {
+    font-size: 32px;
+  }
+
+  .Container_Titolo_Allenamenti h1 {
+    font-size: 32px;
+
+  }
+
+  .Container_Banner h1 {
+    top: 35%;
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .Container_Banner span {
+    font-size: 26px;
+  }
+
+  #Left_Quote {
+    left: 2%;
+    top: 5%;
+    width: 50px;
+    opacity: 40%;
+  }
+
+  #Right_Quote {
+    right: 3%;
+    bottom: 20%;
+  }
+
+  .Container_Frase h1 {
+    font-size: 18px;
+    padding: 1rem;
+    color: #000000;
+  }
+
+  .Container_Frase h5 {
+    bottom: 5%;
+  }
+
+  .Titolo_Orari_Settimanali {
+    width: 100%;
+
+    text-align: center;
+    margin-top: -40px;
+  }
+
+  .Titolo_Orari_Settimanali h1 {
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .Container_Orari_Pugilato {
+    height: 250px;
+  }
+
+  .Container_Frase {
+    height: 200px;
+    margin-top: 0px;
+  }
 
 
-    
-    
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-     }
-     .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(225deg);
-     }
-     .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-225deg);
-     }
-    
-    
-     .nav-links{
-        position: absolute;
-        left: -114%;  
-        top: 62px;     
-        gap: 0;
-        flex-direction: column;
-        background-color: #ffcc00;
-        width: 100%;
-        height: 84%;
-        transition: 0s;
-        z-index: 1;
-    
-    
-     }
-    
-     .nav-links li{
-        margin: 16px auto;       
-        z-index: 1;
-     }
-    
-     .nav-links a:hover{
-        color: #000000;
-        
-     }
-     .nav-links a{
-        color: #000000;
-        font-weight: 900;
-        font-size: 22px;
-     }
-    
-    
-     .nav-links.active{
-        left: 0px;
-        z-index: 1;
-        padding: 0px;
-      
-     }
-    
-    .Container_Titolo_Pugilato h1{
-        padding: 0;
-    }
 
-    .Container_Banner {
-        height: 400px;
-    }
 }
