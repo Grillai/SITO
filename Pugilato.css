@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #030303;
-  height: 900vh;
+
 }
 
 nav {
@@ -156,41 +156,54 @@ nav {
   color: #ffcc00;
 }
 
-.Container_Contenuti {
-  max-width: 60%;
-  height: 400px;
-  margin: 0 auto;
+.Container {
   display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 460px;
+  margin: 100px auto;
+  border: 1px solid #ffcc00;
 
 }
 
 .Parte_Sinistra {
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
 }
 
 .Parte_Sinistra img {
-  width: 100%;
-  height: 80%;
+  width: 98%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 18px;
-  border: 1px solid aliceblue;
+  padding-bottom: 0px;
 }
 
 .Parte_Destra {
   width: 50%;
-  padding: 0.5rem 2rem;
-
 }
 
 .Parte_Destra h5 {
-  color: aliceblue;
-  width: 100%;
+  color: #ffffff;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  margin-top: 0px;
+}
+
+.Parte_Destra button {
+  background-color: #ffcc00;
+  width: 200px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-left: 12px;
+
+}
+
+.Parte_Destra button:hover {
+  background-color: #fddd5d;
+  cursor: pointer;
 }
 
 .Container_Frase {
@@ -214,20 +227,20 @@ nav {
   position: relative;
 }
 
-#Left_Quote {
+.virgoletta {
+  width: 100%;
+  text-align: center;
   position: absolute;
-  width: 70px;
-  top: 19%;
-  left: 30%;
-  opacity: 40%;
 }
 
-#Right_Quote {
-  position: absolute;
-  right: 30%;
-  bottom: 32%;
-  width: 30px;
+#Left_Quote {
+  width: 15%;
+  top: 10%;
+  left: 47.2%;
+  opacity: 15%;
+  transform: rotate(180deg);
 }
+
 
 .Container_Frase h5 {
   position: absolute;
@@ -246,9 +259,7 @@ nav {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
-  padding-left: 80px;
-  letter-spacing: 2px;
-
+  letter-spacing: 4px;
 
 }
 
@@ -272,10 +283,248 @@ nav {
 
 }
 
+.Container_Staff {
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.Container_Staff h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+
+.Container_Staff a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem;
+}
 
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px 20px;
+  padding: 0rem;
+  min-height: 300px;
+  max-width: 100%;
+}
 
+.Card1 {
+  width: 390px;
+  height: 200px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 1px #787878;
+  box-shadow: 0px 0px 10px 1px #787878;
+  transition: 0.4s;
+  overflow: hidden;
+  background-color: #f7cb15;
+}
 
+.Card1:hover {
+  height: 250px;
+}
+
+.Image_Profile {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.Image_Profile img {
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+  position: absolute;
+  margin: 0;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  border: 4px solid rgb(0, 0, 0);
+}
+
+.Image_Profile h1 {
+  position: absolute;
+  top: 55%;
+  font-size: 24px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.Image_Profile h5 {
+  position: absolute;
+  top: 64%;
+  font-size: 18px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.social-links2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 29px 0px;
+}
+
+.social-links2 a {
+  background-color: #000000;
+  border-radius: 100px;
+  transition: 0.4s;
+}
+
+.social-links2 a:hover {
+  transform: translateY(-5px);
+}
+
+.social-links2 i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.footer {
+  max-width: 100%;
+  background-color: #ffcc00;
+  margin-top: 150px;
+  padding: 1rem;
+}
+
+.Contenitore_elementi_footer {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.Logo_Footer {
+  max-width: 150px;
+  height: 200px;
+  text-align: center;
+}
+
+.Logo_Footer h1 {
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Logo_Footer img {
+  width: 70%;
+  border-radius: 100px;
+}
+
+.Orari ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+
+.Orari h1 {
+  font-size: 22px;
+  text-align: left;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline #e91e63;
+}
+
+.Orari li h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Contatti ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.Contatti h1 {
+  font-size: 22px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline #e91e63;
+}
+
+.Contatti li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Social ul {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+}
+
+.Social li {
+  width: 35px;
+  height: 33px;
+  border-radius: 50px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fce97e;
+  transition: 0.2s;
+}
+
+.Social i {
+  font-size: 19px;
+  color: rgb(0, 0, 0);
+}
+
+.Social h1 {
+  font-size: 22px;
+  padding-bottom: 16px;
+  margin-top: 0px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline #e91e63;
+}
+
+.Orari li:hover {
+  transform: translateX(9px);
+  color: #ff0000;
+}
+
+.Orari li {
+  transition: 0.2s;
+}
+
+.Contatti li:hover {
+  transform: translateX(9px);
+}
+
+.Contatti li {
+  transition: 0.2s;
+}
+
+.Contatti a:hover {
+  color: #ff0000;
+}
+
+.Social li:hover {
+  transform: translateY(-9px);
+
+}
 
 
 @media only screen and (max-width: 992px) {
@@ -300,17 +549,34 @@ nav {
   }
 
 
+  .Contenitore_elementi_footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0px;
+  }
+
+  .Orari h1 {
+    text-align: left;
+    padding-top: 20px;
+  }
+
+  .Contatti h1 {
+    text-align: left;
+    padding-top: 20px;
+  }
+
+  .Social h1 {
+    padding-top: 20px;
+  }
+
+  .Parte_Destra h5 {
+    font-size: 19px;
+  }
+
   #Left_Quote {
-    left: 13%;
-    top: 9%;
-    opacity: 40%;
+    width: 30%;
+    opacity: 15%;
   }
-
-  #Right_Quote {
-    right: 14%;
-    bottom: 20%;
-  }
-
 
 }
 
@@ -395,16 +661,16 @@ nav {
 
   }
 
-  .Container_Contenuti {
+  .Container {
     flex-direction: column;
 
     align-items: center;
-    height: 500px;
+    height: 570px;
     margin: 50px auto;
   }
 
   .Parte_Sinistra {
-    width: 120%;
+    width: 100%;
     height: 50%;
 
   }
@@ -424,16 +690,11 @@ nav {
   #Left_Quote {
     left: 2%;
     top: 9%;
-    opacity: 40%;
-  }
-
-  #Right_Quote {
-    right: 2%;
-    bottom: 28%;
+    opacity: 15%;
   }
 
   .Container_Frase {
-    height: 250px;
+    height: 200px;
     margin-top: 0px;
   }
 
@@ -441,6 +702,11 @@ nav {
     bottom: 5%;
   }
 
+  .Card1 {
+    width: 90%;
+    overflow: auto !important;
+    height: 250px;
+  }
 
 
   .Container_Orari_Pugilato {
@@ -450,6 +716,11 @@ nav {
   .Titolo_Orari_Settimanali h1 {
     margin: 0px;
 
+  }
+
+  .Container_Staff h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
   }
 
 }
@@ -472,20 +743,28 @@ nav {
   }
 
   .Container_Banner span {
-    font-size: 26px;
+    font-size: 25px;
+  }
+
+  .Container {
+    max-width: 80%;
+    height: 600px;
+    margin-bottom: 100px;
+
+  }
+
+  .Parte_Destra h5 {
+    font-size: 16px;
   }
 
   #Left_Quote {
     left: 2%;
     top: 5%;
-    width: 50px;
-    opacity: 40%;
+    width: 30%;
+    opacity: 15%;
   }
 
-  #Right_Quote {
-    right: 3%;
-    bottom: 20%;
-  }
+
 
   .Container_Frase h1 {
     font-size: 18px;
@@ -505,13 +784,14 @@ nav {
   }
 
   .Titolo_Orari_Settimanali h1 {
-    padding-left: 40px;
     margin-bottom: 10px;
     font-size: 20px;
+    letter-spacing: 0px;
   }
 
   .Container_Orari_Pugilato {
     height: 250px;
+    width: 90%;
   }
 
   .Container_Frase {
@@ -519,6 +799,19 @@ nav {
     margin-top: 0px;
   }
 
+  .Container_Staff {
+    margin-top: 50px;
+  }
 
+  .Container_Staff h1 {
+    font-size: 20px;
+  }
+
+
+
+
+  .footer {
+    margin-top: 70px;
+  }
 
 }

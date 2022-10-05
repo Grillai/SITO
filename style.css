@@ -202,16 +202,17 @@ nav {
   height: 100%;
   object-fit: cover;
   -webkit-box-shadow: 0px 0px 0px 3px #ffcc00;
-  box-shadow: 0px 0px 0px 3px #ffcc00;
-  border-radius: 10px;
+  box-shadow: 0px 0px 0px 2px #ffcc00;
+  border-radius: 7px;
   transition: 0.5s;
+
 }
 
 .Sezione_Servizi img:hover {
   -webkit-box-shadow: 0px 0px 23px -2px #ffffffe0;
   box-shadow: 0px 0px 23px 2px #ffffffe0;
   transform: scale(1.1);
-  opacity: 60%;
+  opacity: 30%;
 }
 
 .div1 figcaption a {
@@ -228,6 +229,7 @@ nav {
   transition: 0.5s;
   font-size: 32px;
   font-weight: 900;
+  font-family: "Montserrat", sans-serif;
 }
 
 .div1:hover figcaption a {
@@ -250,6 +252,7 @@ nav {
   transition: 0.5s;
   font-size: 32px;
   font-weight: 900;
+  font-family: "Montserrat", sans-serif;
 }
 
 .div2:hover figcaption a {
@@ -272,6 +275,7 @@ nav {
   transition: 0.5s;
   font-size: 32px;
   font-weight: 900;
+  font-family: "Montserrat", sans-serif;
 }
 
 .div3:hover figcaption a {
@@ -279,6 +283,8 @@ nav {
   color: #ffcc00e0;
   text-shadow: 2px 2px 2px #000000;
 }
+
+
 
 .div4 figcaption a {
   position: absolute;
@@ -294,6 +300,7 @@ nav {
   transition: 0.5s;
   font-size: 32px;
   font-weight: 900;
+  font-family: "Montserrat", sans-serif;
 }
 
 .div4:hover figcaption a {
@@ -550,7 +557,7 @@ nav {
 
 .Image_Profile h5 {
   position: absolute;
-  top: 75%;
+  top: 79%;
   font-size: 18px;
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -665,6 +672,98 @@ button:active {
 }
 
 
+.Titolo_Recnesioni {
+  margin-top: 150px;
+  text-align: center;
+  width: 100%;
+}
+
+.Titolo_Recnesioni h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 42px;
+}
+
+.Recensioni {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px 50px;
+  padding: 1rem;
+  margin-top: 80px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.recensione1 {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  padding: 1rem;
+}
+
+.recensione1 h5 {
+  text-align: center;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.recensione2 {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  padding: 1rem;
+}
+
+.recensione2 h5 {
+  text-align: center;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.recensione3 {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  padding: 1rem;
+}
+
+.recensione3 h5 {
+  text-align: center;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.recensione4 {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  padding: 1rem;
+}
+
+.recensione4 h5 {
+  text-align: center;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+
 
 .to-top {
   width: 43px;
@@ -734,14 +833,22 @@ button:active {
   text-decoration: underline #e91e63;
 }
 
+.Orari li:hover {
+  transform: translateX(9px);
+  color: #ff0000;
+}
+
 .Orari li {
   padding: 6px;
+  transition: 0.2s;
+
 }
 
 .Orari li h4 {
   font-size: 18px;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
+
 }
 
 .Contatti ul {
@@ -757,11 +864,23 @@ button:active {
   text-decoration: underline #e91e63;
 }
 
+.Contatti li {
+  transition: 0.2s;
+}
+
 .Contatti li a {
   text-decoration: none;
   color: #000000;
   font-weight: 100;
   font-family: "Montserrat", sans-serif;
+}
+
+.Contatti li:hover {
+  transform: translateX(9px);
+}
+
+.Contatti a:hover {
+  color: #ff0000;
 }
 
 .Social ul {
@@ -779,6 +898,12 @@ button:active {
   justify-content: center;
   align-items: center;
   background-color: #fce97e;
+  transition: 0.2s;
+}
+
+.Social li:hover {
+  transform: translateY(-9px);
+
 }
 
 .Social i {
@@ -1163,9 +1288,34 @@ button:active {
     padding-top: 10px;
   }
 
+  .Titolo_Recnesioni {
+    margin-top: 40px;
+  }
+
+  .Recensioni {
+    margin-top: 20px;
+  }
+
+  .Titolo_Recnesioni h1 {
+
+    font-size: 26px;
+  }
 
   .footer {
     padding: 1rem;
+    margin-top: 90px;
+
   }
 
+}
+
+
+@media only screen and (max-width: 640px) {
+  .Banner {
+    height: 450px;
+  }
+
+  .Banner img {
+    height: 450px;
+  }
 }
