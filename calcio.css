@@ -194,6 +194,60 @@ nav {
 
 }
 
+
+.to-top {
+    width: 43px;
+    height: 45px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #e91e63;
+    border-radius: 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+}
+
+.to-top img {
+    width: 100%;
+    padding-right: 5px;
+}
+
+.to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.instagram {
+    width: 43px;
+    height: 45px;
+    text-align: center;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    background-color: #e91e63;
+    border-radius: 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+
+}
+
+.instagram img {
+    width: 80%;
+    padding-right: 5px;
+}
+
+.instagram.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .footer {
     max-width: 100%;
     background-color: #ffcc00;

@@ -17,11 +17,26 @@ const navSlide = () => {
 
 const toTop = document.querySelector(".to-top");
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 300) {
+  if (window.pageYOffset > 200) {
     toTop.classList.add("active");
   } else {
     toTop.classList.remove("active");
   }
 });
 
+const instagram = document.querySelector(".instagram");
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 200) {
+    instagram.classList.add("active");
+  } else {
+    instagram.classList.remove("active");
+  }
+});
+
 navSlide();
+
+
+const carousel = new bootstrap.Carousel('#myCarousel');
+
+
+touch = "true";

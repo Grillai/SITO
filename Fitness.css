@@ -396,6 +396,56 @@ nav {
     text-align: center;
 }
 
+.to-top {
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #e91e63;
+    border-radius: 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.to-top img {
+    width: 100%;
+}
+
+.to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.instagram {
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    background-color: #e91e63;
+    border-radius: 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.instagram img {
+    width: 70%;
+}
+
+.instagram.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .footer {
     max-width: 100%;
     background-color: #ffcc00;

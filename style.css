@@ -6,8 +6,9 @@ html {
   height: 100%;
 }
 
+
 body {
-  background-color: #000000;
+  background-color: #000000 !important;
   font-family: "Open Sans", sans-serif;
   margin: 0px;
   padding: 0px;
@@ -154,160 +155,77 @@ nav {
 }
 
 /*Scirtte sui Servizi*/
-
-/*Griglia Serivizi---------------------------------------------------------------------------------*/
-
-.Sezione_Servizi {
-  display: inline-flex;
+/*Nuovi Servizi Boostsrtap*/
+.Container_Servizi {
+  width: 100%;
+  display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 90px 60px;
+  gap: 80px 100px;
   padding: 0;
-  max-height: 100%;
-  max-width: 100%;
 }
 
-.Sezione_Servizi .div1 {
-  width: 25%;
-  height: 320px;
-  padding: 0px 0px;
+.Bodybuilding {
+  width: 420px;
+  box-shadow: 0px 0px 0px 2px #ffcc00;
+  border-radius: 7px;
   position: relative;
-  padding: -1rem;
 }
 
-.Sezione_Servizi .div2 {
-  width: 25%;
-  height: 320px;
-  position: relative;
-  padding: -1rem;
+.Pugilato {
+  width: 420px;
+  box-shadow: 0px 0px 0px 2px #ffcc00;
+  border-radius: 7px;
 }
 
-.Sezione_Servizi .div3 {
-  width: 25%;
-  height: 320px;
-  position: relative;
-  padding: -1rem;
+.Fitness {
+  width: 420px;
+  box-shadow: 0px 0px 0px 2px #ffcc00;
+  border-radius: 7px;
 }
 
-.Sezione_Servizi .div4 {
-  width: 25%;
-  height: 320px;
-  position: relative;
-  padding: -1rem;
+.Calcio {
+  width: 420px;
+  box-shadow: 0px 0px 0px 2px #ffcc00;
+  border-radius: 7px;
 }
 
-.Sezione_Servizi img {
+
+.carousel-item {
+  height: 300px;
+  border-radius: 7px;
+}
+
+.carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-box-shadow: 0px 0px 0px 3px #ffcc00;
-  box-shadow: 0px 0px 0px 2px #ffcc00;
   border-radius: 7px;
-  transition: 0.5s;
 
 }
 
-.Sezione_Servizi img:hover {
-  -webkit-box-shadow: 0px 0px 23px -2px #ffffffe0;
-  box-shadow: 0px 0px 23px 2px #ffffffe0;
-  transform: scale(1.1);
-  opacity: 30%;
+.carousel-caption {
+  margin: 50px auto;
 }
 
-.div1 figcaption a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  text-decoration: none;
-  max-width: 100%;
-  height: 20%;
-  padding-top: 20px;
-  opacity: 0;
-  transition: 0.5s;
-  font-size: 32px;
+.carousel-caption h1 {
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
-}
-
-.div1:hover figcaption a {
-  opacity: 1;
+  font-size: 35px;
   color: #ffcc00e0;
-  text-shadow: 2px 2px 2px #000000;
-}
-
-.div2 figcaption a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  text-decoration: none;
-  max-width: 100%;
-  height: 20%;
-  padding-top: 20px;
-  opacity: 0;
-  transition: 0.5s;
-  font-size: 32px;
-  font-weight: 900;
-  font-family: "Montserrat", sans-serif;
-}
-
-.div2:hover figcaption a {
-  opacity: 1;
-  color: #ffcc00e0;
-  text-shadow: 2px 2px 2px #000000;
-}
-
-.div3 figcaption a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  text-decoration: none;
-  max-width: 100%;
-  height: 20%;
-  padding-top: 20px;
-  opacity: 0;
-  transition: 0.5s;
-  font-size: 32px;
-  font-weight: 900;
-  font-family: "Montserrat", sans-serif;
-}
-
-.div3:hover figcaption a {
-  opacity: 1;
-  color: #ffcc00e0;
+  opacity: 1 !important;
   text-shadow: 2px 2px 2px #000000;
 }
 
 
 
-.div4 figcaption a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  text-decoration: none;
-  max-width: 100%;
-  height: 20%;
-  padding-top: 20px;
-  opacity: 0;
-  transition: 0.5s;
-  font-size: 32px;
-  font-weight: 900;
-  font-family: "Montserrat", sans-serif;
-}
 
-.div4:hover figcaption a {
-  opacity: 1;
-  color: #ffcc00e0;
-  text-shadow: 2px 2px 2px #000000;
-}
+
+
+/*Griglia Serivizi---------------------------------------------------------------------------------
+
+
 
 /*Griglia Serivizi---------------------------------------------------------------------------------*/
 
@@ -601,8 +519,8 @@ nav {
 .Contattaci_sinistra iframe {
   width: 100%;
   height: 100%;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .Contattaci_destra {
@@ -611,8 +529,8 @@ nav {
   height: 100%;
   width: 50%;
   margin-right: 90px;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .form-group {
@@ -777,6 +695,7 @@ button:active {
   opacity: 0;
   pointer-events: none;
   transition: 0.4s;
+  z-index: 5;
 }
 
 .to-top img {
@@ -784,6 +703,33 @@ button:active {
 }
 
 .to-top.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.instagram {
+  width: 43px;
+  height: 43px;
+  text-align: center;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 100px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+
+}
+
+.instagram img {
+  width: 70%;
+}
+
+.instagram.active {
   opacity: 1;
   pointer-events: auto;
 }
@@ -951,47 +897,104 @@ button:active {
     height: 450px;
   }
 
-  .div1 figcaption a {
-    font-size: 32px;
+  .Bodybuilding {
+    width: 600px;
+
   }
 
-  .div2 figcaption a {
-    font-size: 32px;
+  .Pugilato {
+    width: 600px;
   }
 
-  .div3 figcaption a {
-    font-size: 32px;
+  .Calcio {
+    width: 600px;
   }
 
-  .div4 figcaption a {
-    font-size: 32px;
+  .Fitness {
+    width: 600px;
   }
 
-  .Sezione_Servizi .div1 {
-    width: 500px;
-    height: 300px;
-  }
 
-  .Sezione_Servizi .div2 {
-    width: 500px;
-    height: 300px;
-  }
-
-  .Sezione_Servizi .div3 {
-    width: 500px;
-    height: 300px;
-  }
-
-  .Sezione_Servizi .div4 {
-    width: 500px;
-    height: 300px;
-  }
 
   button {
     position: absolute;
     top: 92%;
     left: 70%;
     transform: translate(-50%, -50%);
+  }
+
+  .Container_Contattaci_Titolo {
+    margin: 100px auto;
+    margin-bottom: 0px;
+  }
+
+  .Container_Contattaci_Titolo h2 {
+    font-size: 26px;
+  }
+
+  .Container_Contattaci {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .Contattaci_destra {
+    margin: 0px auto;
+    width: 90%;
+    height: 55%;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .Contattaci_sinistra {
+    margin: 0 auto;
+    height: 40%;
+    width: 90%;
+    border-radius: 0px;
+  }
+
+  .Contattaci_sinistra iframe {
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+  }
+
+  button {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 72%;
+  }
+
+  button:active {
+    background-color: #ffd738e0;
+  }
+
+  .Nome {
+    padding-top: 0px;
+    height: 40px;
+  }
+
+  .Nome h2 {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .E_Mail {
+    padding-top: 0px;
+    margin-top: 80px;
+    height: 40px;
+  }
+
+  .E_Mail h2 {
+    font-size: 20px;
+  }
+
+  .Messaggio {
+    margin-top: 20px;
   }
 
 
@@ -1066,74 +1069,11 @@ button:active {
     letter-spacing: 0px;
   }
 
-  .Sezione_Servizi {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
+  .carousel-caption h1 {
+    opacity: 1 !important;
   }
 
-  .Sezione_Servizi img {
-    opacity: 60%;
-  }
 
-  .Sezione_Servizi img:hover {
-    transform: none;
-  }
-
-  .div1 {
-    max-width: 90%;
-    height: 280px;
-    font-size: 16px;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  .div1 figcaption a {
-    opacity: 1;
-    color: #ffcc00;
-  }
-
-  .div2 {
-    max-width: 90%;
-    height: 280px;
-    font-size: 16px;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  .div2 figcaption a {
-    opacity: 1;
-    color: #ffcc00;
-  }
-
-  .div3 {
-    max-width: 90%;
-    height: 280px;
-    font-size: 16px;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  .div3 figcaption a {
-    opacity: 1;
-    color: #ffcc00;
-  }
-
-  .div4 {
-    max-width: 90%;
-    height: 280px;
-    font-size: 16px;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  .div4 figcaption a {
-    opacity: 1;
-    color: #ffcc00;
-  }
 
   .Container_Titolo {
     margin: 100px auto;
@@ -1206,79 +1146,6 @@ button:active {
     height: 250px;
   }
 
-  .Container_Contattaci_Titolo {
-    margin: 100px auto;
-    margin-bottom: 0px;
-  }
-
-  .Container_Contattaci_Titolo h2 {
-    font-size: 26px;
-  }
-
-  .Container_Contattaci {
-    width: 100%;
-    height: 1100px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .Contattaci_destra {
-    margin: 0px auto;
-    width: 90%;
-    height: 55%;
-    border-radius: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-
-  .Contattaci_sinistra {
-    margin: 0 auto;
-    height: 40%;
-    width: 90%;
-    border-radius: 0px;
-  }
-
-  .Contattaci_sinistra iframe {
-    border-radius: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: 100%;
-  }
-
-  button {
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    width: 72%;
-  }
-
-  button:active {
-    background-color: #ffd738e0;
-  }
-
-  .Nome {
-    padding-top: 0px;
-    height: 40px;
-  }
-
-  .Nome h2 {
-    margin-top: 0px;
-    font-size: 20px;
-  }
-
-  .E_Mail {
-    padding-top: 0px;
-    margin-top: 80px;
-    height: 40px;
-  }
-
-  .E_Mail h2 {
-    font-size: 20px;
-  }
-
-  .Messaggio {
-    margin-top: 20px;
-  }
 
   .Contatti h1 {
     padding-top: 10px;
@@ -1318,4 +1185,36 @@ button:active {
   .Banner img {
     height: 450px;
   }
+
+  .Bodybuilding {
+    width: 90%;
+  }
+
+
+  .Fitness {
+    width: 90%;
+  }
+
+  .carousel-item {
+    height: 200px;
+  }
+
+  .Pugilato {
+    width: 90%;
+  }
+
+  .Calcio {
+    width: 90%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 28px;
+
+  }
+
+  .carousel-caption {
+    margin: 0;
+  }
+
+
 }
