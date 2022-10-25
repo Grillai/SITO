@@ -10,6 +10,28 @@ body {
 
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ffcc00;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #ffcc00c0;
+}
+
 nav {
   width: 100%;
   background-color: #030303;
@@ -425,7 +447,7 @@ nav {
   position: fixed;
   bottom: 80px;
   right: 10px;
-  background-color: #e91e63;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   border-radius: 100px;
   opacity: 0;
   pointer-events: none;
@@ -575,6 +597,10 @@ nav {
 .Social li:hover {
   transform: translateY(-9px);
 
+}
+
+footer img {
+  margin-bottom: -5px;
 }
 
 
